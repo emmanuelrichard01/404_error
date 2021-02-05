@@ -1,0 +1,134 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        background-size: auto !important;
+
+        .container {
+            display: flex;
+            color: #fff;
+            flex-direction: column;
+            justify-content: center !important;
+
+            .error_svg {
+                z-index: 2;
+                padding-top: 1.6em;
+                padding-left: 0 !important;
+                transform: translatey(0px);
+                animation: float 6s ease-in-out infinite;
+            }
+
+            .error_msg {
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                max-width: 150px;
+
+                h1 {
+                    font-size: 5.3vw !important;
+                    padding-bottom: .5em;
+                }
+
+                .msg2 {
+                    width: 70vw !important;
+                    line-height: 180%;
+                    margin-bottom: 1em;
+                }
+
+                button {
+                    color: #35373e;
+                    font-size: .5em;
+                    padding: 1em 2em;
+                    width: 70vw !important;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .glitch {
+        font-size: 7rem !important;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    html,
+    body {
+        background-repeat: repeat-y !important;
+
+        .container {
+            display: flex;
+            color: #fff;
+            justify-content: space-evenly !important;
+
+            .glass {
+
+                width: 90vw !important;
+                height: 70vh !important;
+            }
+
+            .error_svg {
+                padding-left: 2.6em !important;
+            }
+
+            .error_msg {
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                max-width: 45vw !important;
+
+                h1 {
+                    font-size: 4.4vw !important;
+                    padding-bottom: .5em;
+                }
+
+                .msg2 {
+                    width: 40vw !important;
+                    line-height: 180%;
+                    margin-bottom: 1em;
+                }
+
+                button {
+                    color: #35373e;
+                    font-size: .5em;
+                    padding: 1em 2em;
+                    width: 40vw !important;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+    .glitch {
+        font-size: 10vw !important;
+    }
+
+    .error_msg {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        max-width: 45vw !important;
+
+        .msg2 {
+            font-size: 1.5vw;
+        }
+
+        button {
+            font-size: 1.3vw !important;
+        }
+    }
+}
